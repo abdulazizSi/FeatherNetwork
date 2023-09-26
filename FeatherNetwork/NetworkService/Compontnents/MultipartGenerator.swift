@@ -93,7 +93,7 @@ struct MultipartGenerator {
 /// Extension to generate a unique boundary string.
 extension String {
     func generateBoundary() -> String {
-        return "multipartform.boundary-\(NSUUID().uuidString)"
+        return "featherNetwork.boundary-\(NSUUID().uuidString)"
     }
 }
 
