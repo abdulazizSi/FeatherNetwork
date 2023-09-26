@@ -12,7 +12,7 @@ protocol URLRequestConvertible: DecodableResult {
     var baseURL: URL? { get }
     
     /// The path to be appended to `baseURL` to form the full `URL`.
-    var path: String { get }
+    var path: ServerPath { get }
     
     /// The HTTP method used in the request.
     var method: HTTPMethod { get }
@@ -61,7 +61,7 @@ extension URLRequestConvertible {
             throw NetworkError.invalidURL
         }
         
-        var urlRequest = URLRequest(url: url.appendingPathComponent(path),
+        var urlRequest = URLRequest(url: url.appendingPathComponent(path.rawValue),
                                     cachePolicy: .reloadIgnoringLocalAndRemoteCacheData,
                                     timeoutInterval: 100)
         
