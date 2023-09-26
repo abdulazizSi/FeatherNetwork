@@ -23,6 +23,7 @@
 		8927DEB42AC2B48600556139 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8927DEB32AC2B48600556139 /* ParameterEncoding.swift */; };
 		8927DEB62AC2B66700556139 /* MultipartGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8927DEB52AC2B66700556139 /* MultipartGenerator.swift */; };
 		8927DEB92AC2B85800556139 /* URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8927DEB82AC2B85800556139 /* URLRequestConvertible.swift */; };
+		8927DEBC2AC2BF4000556139 /* ServerPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8927DEBB2AC2BF4000556139 /* ServerPaths.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		8927DEB32AC2B48600556139 /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
 		8927DEB52AC2B66700556139 /* MultipartGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartGenerator.swift; sourceTree = "<group>"; };
 		8927DEB82AC2B85800556139 /* URLRequestConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestConvertible.swift; sourceTree = "<group>"; };
+		8927DEBB2AC2BF4000556139 /* ServerPaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerPaths.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				8927DEAF2AC2B12D00556139 /* HTTPMethod.swift */,
 				8927DEB12AC2B20F00556139 /* RequestTask.swift */,
 				8927DEB32AC2B48600556139 /* ParameterEncoding.swift */,
+				8927DEBB2AC2BF4000556139 /* ServerPaths.swift */,
 			);
 			path = Compontnents;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				8927DEB42AC2B48600556139 /* ParameterEncoding.swift in Sources */,
 				8927DEA82AC2AD2000556139 /* NetworkError.swift in Sources */,
 				8927DE912AC29E2000556139 /* SceneDelegate.swift in Sources */,
+				8927DEBC2AC2BF4000556139 /* ServerPaths.swift in Sources */,
 				8927DEB02AC2B12D00556139 /* HTTPMethod.swift in Sources */,
 				8927DEAA2AC2AD6500556139 /* NetworkService.swift in Sources */,
 			);
