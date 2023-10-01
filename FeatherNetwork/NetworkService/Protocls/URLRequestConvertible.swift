@@ -39,7 +39,7 @@ protocol URLRequestConvertible: DecodableResult {
 
 extension URLRequestConvertible {
     var baseURL: URL? {
-        return URL(string: "")
+        return URL(string: "https://example.com")
     }
                    
     var defaultParameters: Parameters {
