@@ -108,3 +108,10 @@ Feather Network welcomes contributions from the developer community. If you have
 
 ## License
 Feather Network is available under the [MIT](https://github.com/abdulazizSi/FeatherNetwork/blob/main/LICENSE) License. You are free to use, modify, and distribute this SDK as per the terms of the license.
+
+## Contact
+
+Feel free to reach out with issues, questions or anything else.
+
+- <p><a href="mailto:abdulaziz.si.aa@gmail.com">Send Email</a></p>
+- [Follow on LinkedIn](https://linkedin.com/in/abdulaziz-alsikh-1225a2120)
