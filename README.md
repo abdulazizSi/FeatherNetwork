@@ -11,12 +11,34 @@ Feather Network is a lightweight networking SDK for Swift, providing a seamless 
 
 ## Table of Contents
 - [Usage](#usage)
-- [Example](#example)
+- [Examples](#examples)
 
 ## Usage
+Feather Network can be easily integrated into your Swift projects. Use the following steps to make a network request:
+``` swift
+// Create an instance of the Network
+let network = Network.init()
 
-## Example
-1- add the api path inside the ServerPath file
+// Define the endpoint with the desired response model 'UserModel'
+let endpoint = UserEndpoint<UserModel>.get
+
+// Initiate the network request with the specified endpoint
+network.request(endpoint) { result in
+    switch result {
+    case .success(let response):
+        // Handle the successful response here
+        print("Received user name: \(response.name)")
+    case .failure(let error):
+        // Handle any errors that occur during the request
+        print("Error occurred: \(error)")
+    }
+}
+```
+
+## Examples
+
+### Example 1
+Add the API path inside the 'ServerPath' file
 ```swift
 enum ServerPath: String {
     //User API's -----
@@ -28,7 +50,8 @@ enum ServerPath: String {
     
 }
 ```
-2- create a new endpoint and confirom to the URLRequestConvertible
+### Example 2
+Create a new endpoint and confirom to the 'URLRequestConvertible'
 ``` swift
 
 enum UserEndpoint<ResultType: Decodable>: URLRequestConvertible {
@@ -79,21 +102,7 @@ extension UserEndpoint {
     }
 }
 ```
-3- Then you can crete your request as follow
-``` swift
-let network = Network.init()
 
-let endpoint = UserEndpoint<UserModel>.get
-
-network.request(endpoint) { result in
-    switch result {
-    case .success(let response):
-        print(response.name)
-    case .failure(let error):
-        print(error)
-    }
-}
-```
 ## Contributing
 Feather Network welcomes contributions from the developer community. If you have any ideas, bug fixes, or improvements, feel free to open an issue or submit a pull request. Your contributions are highly appreciated and will help make Feather Network even better for everyone.
 
