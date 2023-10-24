@@ -98,4 +98,4 @@ network.request(endpoint) { result in
 Feather Network welcomes contributions from the developer community. If you have any ideas, bug fixes, or improvements, feel free to open an issue or submit a pull request. Your contributions are highly appreciated and will help make Feather Network even better for everyone.
 
 ## License
-Feather Network is available under the [MIT](https://github.com/) License. You are free to use, modify, and distribute this SDK as per the terms of the license.
+Feather Network is available under the [MIT](https://github.com/abdulazizSi/FeatherNetwork/blob/main/LICENSE) License. You are free to use, modify, and distribute this SDK as per the terms of the license.
