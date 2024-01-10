@@ -34,6 +34,7 @@ struct MultipartGenerator {
         /// Set the appropriate headers for the multipart request.
         urlRequest.allHTTPHeaderFields?["Content-Type"] = "multipart/form-data; boundary=\(boundary)"
         urlRequest.addValue("\(bodyData.count)", forHTTPHeaderField: "content-length")
+        urlRequest.httpBody = bodyData
         
         return urlRequest
     }
